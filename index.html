@@ -1,0 +1,115 @@
+<!-- To create a html boilerplate using emmett shortcut we simply use ! and enter or tab -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Some other syntax used in html to mention a few include: -->
+    <form>to add a form</form> 
+    <table>to create a table</table>
+    <td>to add a table data</td>
+    <tr>table row</tr>
+    <th>table head to a headind to a data row or column</th>
+    <audio src="">to add an audio file</audio>
+    <video src="">to add a video file</video>
+    line break<br>
+    <figure>to add a figure</figure>
+    <figcaption>to add caption to a figure</figcaption>
+    <!-- There are tens more html syntax and each has its unique function, the above are just few-->
+
+    <!-- using wrap abbreviation in emmett to wrap a given syntax or group of syntax-->
+
+    <p>Lorem, ipsum dolor.</p>
+    <!-- To wrap the above paragraph into a div and add a heading we use the abbreviation in y case its set to ctrl + w to open the abbreviation pane and type  .container>h1.text{Heading}+.text to have the below outcome-->
+    <div class="container">
+        <h1 class="text">Heading</h1>
+        <div class="text">
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+    </div>
+
+    <!-- having a list like this -->
+    About
+    Contact
+    Sales
+    Products
+    <!-- to wrap the above list into a nav syntax, give them same class and also make them links independently we highlight and open the abrreviation pane and type nav>ul.group>li.items*>a to have the outcome below -->
+    <nav>
+        <ul class="group">
+            <li class="items">
+                <a href="">About</a>
+            </li>
+            <li class="items">
+                <a href="">Contact</a>
+            </li>
+            <li class="items">
+                <a href="">Sales</a>
+            </li>
+            <li class="items">
+                <a href="">Products</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Having a list with numbers as shown below -->
+    1. About
+    2. Contact
+    3. Sales
+    4. Products
+    <!-- To make the list as the one above and remove the numbers and also assign differnt class to each element we highlight the list, open the abbreviation pane and type nav>ul.group>li.items$*>a|t to get the below outcome -->
+    <nav>
+        <ul class="group">
+            <li class="items1">
+                <a href="">About</a>
+            </li>
+            <li class="items2">
+                <a href="">Contact</a>
+            </li>
+            <li class="items3">
+                <a href="">Sales</a>
+            </li>
+            <li class="items4">
+                <a href="">Products</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Having a list of items like this -->
+    About
+    Contact
+    Sales
+    Products
+    <!-- To control the output by adding images and other attributes we use the abrreviation pane and type ul>li[titile=$#]*>{$#}+img[alt=$#] to have the below output depending on desired contents -->
+    <ul>
+        <li titile="About">
+            About
+            <img src="" alt="About">
+        </li>
+        <li titile="Contact">
+            Contact
+            <img src="" alt="Contact">
+        </li>
+        <li titile="Sales">
+            Sales
+            <img src="" alt="Sales">
+        </li>
+        <li titile="Products">
+            Products
+            <img src="" alt="Products">
+        </li>
+    </ul>
+
+    <!-- These are the basic wrapping operation shortcuts using emmett in html-->
+</body>
+</html>
+
+<!-- To access the list of shortcuts in VS code and also customize the we use ctrl + K + S -->
+<!-- To create a set of dummy words we use lorem followed by the number of words, no space like this => lorm10 and enter to create 10 dummy words -->
+<!-- to create a div container with a class using emmett we simply us the dot foolwed by the class name like this => .wrap and enter or tab to create a div with a class name wrap -->
+<!-- to create an a div with an ID we do same as above but replace dot with harsh like this => #wrap to create a div with wrap ID-->
+<!-- For other syntax class and ID we use same as above but add the syntax name before the above steps like this => p.wrap then enter to create a p tag with a wrap class and p#wrap to create a p tag with  wrap ID-->
+<!-- The above step is applicable to all other syntax -->
