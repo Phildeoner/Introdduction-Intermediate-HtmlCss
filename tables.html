@@ -6,22 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables Exercise</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            /* the table layout gives the table a fixed cell size */
+            table-layout: fixed;
+            /* the width set the cell width */
+            width: 100%;
+            /* border collapse collapses the border and make it a single line */
+            border-collapse: collapse;
+}
+        /* This style adds borders to the table cells */
         table, th, td {
             border: 1px solid black;
         }
     </style>
 </head>
 <body>
+    <!-- tables are created in a table tag -->
     <table>
+        <!-- colgroup groups a column to be styled -->
+        <colgroup>
+            <!-- col controls which column is to be styled  -->
+            <col>
+            <!-- span groups two colums and assigned the style to it -->
+            <col style="background-color: yellow" span="2" />
+          </colgroup>
+        <!-- table contents are arranged in rows using tr which means table raw -->
         <tr>
+            <!-- the th means table head which is a heading always bolden -->
             <th>Name</th>
             <th>Age</th>
             <th>Address</th>
         </tr>
         <tr>
+            <!-- td means table data which holds the contents each cell -->
             <td>Benjamin Michael</td>
             <td>25</td>
             <td>123 Main Street</td>
+            <td>extra</td>
         </tr>
         <tr>
             <td>John Doe</td>
